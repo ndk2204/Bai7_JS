@@ -22,8 +22,8 @@
                     <div class="form-group col-6">
                         <input type="number" class="form-control" id="nhapso" placeholder="Nhập số nguyên">
                     </div>
-                    <div class="form-group col-4">
-                        <button type="button" class="btn btn-danger" id="add">Thêm số</button>
+                    <div class="form-group col-4 mr-3">
+                        <button type="button" class="btn btn-danger" id="add">Thêm số nguyên</button>
                     </div>
                 </div>
                 <div class="container px-0">
@@ -46,10 +46,10 @@
                 </div>
                 <div class="d-flex justify-content-between">
                     <div class="form-group">
-                        <button type="button" class="btn btn-warning" id="soduongnhonhat">Tìm số dương nhỏ nhất</button>
+                        <button type="button" class="btn btn-info" id="soduongnhonhat">Tìm số dương nhỏ nhất</button>
                     </div>
                     <div class="form-group">
-                        <button type="button" class="btn btn-warning" id="sochancuoicung">Tìm số chẵn cuối cùng</button>
+                        <button type="button" class="btn btn-info" id="sochancuoicung">Tìm số chẵn cuối cùng</button>
                     </div>
                     <div class="form-group">
                         <button type="button" class="btn btn-warning" id="showdoicho">Đổi chỗ 2 số</button>
@@ -57,10 +57,12 @@
                 </div>
                 <div class="row container p-0 d-none" id="boxdoi2so">
                     <div class="form-group col-5">
-                        <input type="number" class="form-control border-danger" id="vitri1" placeholder="Nhập vị trí số 1">
+                        <input type="number" class="form-control" id="vitri1"
+                            placeholder="Nhập vị trí số 1">
                     </div>
                     <div class="form-group col-5">
-                        <input type="number" class="form-control border-danger" id="vitri2" placeholder="Nhập vị trí số 2">
+                        <input type="number" class="form-control" id="vitri2"
+                            placeholder="Nhập vị trí số 2">
                     </div>
                     <div class="form-group col-1.5">
                         <button type="button" class="btn btn-danger" id="doicho">Đổi chỗ</button>
@@ -69,15 +71,40 @@
 
                 <div class="d-flex justify-content-between">
                     <div class="form-group">
-                        <button type="button" class="btn btn-info" id="sapxep">Sắp xếp mảng</button>
+                        <button type="button" class="btn btn-info" id="sapxep">Sắp xếp mảng tăng dần</button>
                     </div>
                     <div class="form-group">
-                        <button type="button" class="btn btn-info" id="demsoduong">Tìm số nguyên tố đầu tiên trong
+                        <button type="button" class="btn btn-info" id="songuyento">Tìm số nguyên tố đầu tiên trong
                             mảng</button>
                     </div>
                 </div>
-
-
+                <div class="text-center">
+                    <div class="form-group">
+                        <button type="button" class="btn btn-warning" id="showsothuc">Nhập mảng số thực
+                        </button>
+                    </div>
+                </div>
+                <div id="boxsothuc1" class="d-none px-0 justify-content-center container">
+                    <div class="form-group col-6">
+                        <input type="number" class="form-control" id="nhapsothuc" placeholder="Nhập số thực">
+                    </div>
+                    <div class="form-group col-4 mr-3">
+                        <button type="button" class="btn btn-danger" id="addsothuc">Thêm số thực</button>
+                    </div>
+                </div>
+                <div id="boxsothuc2" class="d-none container px-0">
+                    <p class="p-3 alert alert-info" id="displaysothuc"></p>
+                    <p style="display: none;" class="p-3 alert alert-danger" id="result2"></p>
+                </div>
+                <div id="boxsothuc3" class="d-none justify-content-between">
+                    <div class="form-group">
+                        <button type="button" class="btn btn-info" id="timsonguyen">Tìm bao nhiêu số nguyên</button>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-info" id="sosanh">So sánh số lượng số âm và số
+                            dương</button>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
